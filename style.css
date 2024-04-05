@@ -1,0 +1,783 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "NBInternationalPro-Reg";
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#navbar{
+    position: fixed;
+    height: 8vh;
+    width: 100%;
+    gap: 2vw;
+/*     left: 15vw; */
+    padding-left: 25vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    background-color: transparent;
+}
+#navbar  h1{
+    font-size: 2.2vw;
+    position: absolute;
+    left: 3%;
+    opacity: 0;
+}
+#navbar h6{
+    font-size: 1.1vw;
+    font-weight: 400;
+    transition: all ease 0.5s;
+}
+#navbar h6:hover{
+    text-decoration: underline;
+}
+#navbar .contact{
+    text-decoration: underline;
+    position: absolute;
+    left: 92vw;
+}
+#navbar .contact:hover{
+    text-decoration: dashed;
+}
+
+
+#main{
+    width: 100%;
+    overflow: hidden;
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+#page1 .line{
+    position: absolute;
+    left: 52%;
+    width: 0.05vw;
+    height: 100%;
+    background-color: silver;
+}
+#page1 #top-h1{
+    margin-left: 2vh;
+    position: relative;
+    font-size: 4.2vw;
+    height: 17vh;
+    width: 50vw;
+}
+#page1 #top-h1 h1{
+    position: absolute;
+    /* top: 80%; */
+    width: 100%;
+    display: flex;
+    font-weight: 500;
+}
+#page1 #page1-btm-h1{
+    display: flex;
+    height: 20vh;
+    width: 55vw;
+    align-items: center;
+    position: relative;
+    margin-left: 2vh;
+}
+#page1 #btm-h1{
+    animation: blinks 1.5s infinite;
+}
+#page1 #btm-h1 h1{
+    position: absolute;
+    top: -3vh;
+    font-size: 10vw;
+    font-weight: 400;  
+}
+#page1 #animated-h1{
+    position: relative;
+    top: -60%;
+    left: 10%;
+    font-size: 4.2vw;
+}
+#page1 #animated-h1 h1{
+    position: absolute;
+    font-weight: 200;
+    opacity: 0;
+    letter-spacing: 0.1px;
+}
+
+#page1 #video{
+    position: absolute;
+    left: 50%;
+    top: 52%;
+    transform: translate(-50%,-50%);
+    height: 32vh;
+    width: 30vw;
+    border-radius: 1vw;
+    border: 1px solid #dadada;
+    overflow: hidden;
+    border: 0;
+    outline: 0;
+}
+#page1 #video video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#page1 p{
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    width: 30%;
+    font-size: 2.2vw;
+}
+
+@keyframes blinks {
+    0%, 49.9% {
+        opacity: 0;
+    }
+    50%, 100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes blink {
+    0%, 25% {
+        opacity: 0;
+    }
+    26%, 50% {
+        opacity: 1;
+    }
+    51%, 100% {
+        opacity: 0;
+    }
+}
+
+#page2{
+    height: 120vh;
+    width: 100%;
+    padding: 1vw;
+}
+#page2 #page2-top{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+#page2 .card{
+    height: 90%;
+    width: 50%;
+    margin: 0 6px;
+    border-radius: 1vw;
+}
+#page2 .cardd{
+    height: 90%;
+    width: 25%;
+    border-radius: 1vw;
+    margin: 0 6px;
+}
+#page2 #card1{
+    display: flex;
+    padding: 1vw;
+    gap: 1vw;
+    font-size: 2vw;
+    color: #ffff;
+    background-color: #000;
+}
+#page2 #card1 .circle{
+    height: 2vw;
+    width: 2vw;
+    margin-top: 1vw;
+    border-radius: 50%;
+    background-color: #fff;
+}
+#page2 .card-top{
+    font-size: 7vw;
+    padding-left: 1vw;
+}
+#page2 .card-btm{
+    font-size: 2.5vw;
+    margin-top: 8vw;
+    padding-left: 1vw;
+}
+#page2 .card-btm h6{
+    font-weight: 400;
+}
+#page2 .card-btm .circle-black{
+    height: 2.5vw;
+    width: 2.5vw;
+    margin-top: 1vw;
+    border-radius: 50%;
+    background-color: #000;
+}
+#page2 .yellow-card{
+    background-color: #F4F4F4;
+}
+#page2 .yellow-card:hover{
+    background-color: rgb(227, 227, 81);
+}
+#page2 #page2-btm{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+#page3{
+    width: 100%;
+}
+
+#page3-top{
+    height: 30%;
+    width: 100%;
+    padding-top: 10vh;
+}
+#page3-top .text-section{
+    padding: 0 1vw;
+    width: 50%;
+    margin-left: 50%;
+}
+#page3-top #text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.3vw;
+    padding-bottom: 1vw;
+}
+#page3-top #text h1{
+    font-weight: 400;
+}
+#page3-top .button-section{
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 1.5vw 2vw;
+    border-radius: 0.5vw;
+    background-color: #222;
+    cursor: pointer;
+    overflow: hidden;
+}
+#page3-top .button-section .buttons{
+    display: flex;
+    flex-direction: column;
+}
+#page3-top .button-section .buttons button{
+    padding: 0.5vw;
+    position: absolute;
+    top: 10%;
+    font-size: 1vw;
+    color: #ffff;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+}
+#page3-top .button-section .buttons button:nth-child(2){
+    top: 80%;
+    transition: all ease 0.5s;
+}
+
+#page3-top .button-section:hover{
+    background-color: #222;
+}
+#page3-top .button-section:hover button:nth-child(1){
+    top: -80%;
+}
+#page3-top .button-section:hover button:nth-child(2){
+    top: 10%;
+}
+
+#page3-btm{
+    height: 160vh;
+    width: 100%;
+    margin-top: 10vw;
+}
+#page3-btm .horizontal-card{
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    margin: 1vw;
+    border-top: 1px solid gray;
+}
+#page3-btm .horizontal-card:nth-child(4){
+    border-bottom: 1px solid gray;
+}
+#page3-btm .horizontal-card #left{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: end;
+    padding: 1.2vw;
+    position: relative;
+}
+#page3-btm .horizontal-card #left .left-top{
+    display: flex;
+    font-size: 1.6vw;
+    position: absolute;
+    top: 10%;
+    gap: 0.5vw;
+}
+#page3-btm .horizontal-card #left .left-top h6{
+    font-weight: 400;
+}
+.horizontal-card #left .left-top .circle{
+    height: 1vw;
+    width: 1vw;
+    border-radius: 50%;
+    margin-top: 0.2vw;
+    background-color: #000;
+}
+#page3-btm .horizontal-card #left h2{
+    font-size: 2.3vw;
+    font-weight: 400;
+}
+#page3-btm .horizontal-card #right{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+#page3-btm .horizontal-card #right .image{
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    height: 90%;
+    border-radius: 1vw;
+    overflow: hidden;
+    position: relative;
+    transition: all ease 0.5s;
+}
+#page3-btm .horizontal-card #right .image img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 0.5s;
+}
+
+#page3-btm .horizontal-card:hover .image img{
+    scale: 1.1;
+}
+
+#page4{
+    height: 305vh;
+    width: 100%;
+    padding: 0 1vw;
+    position: relative;
+}
+#page4 #pt1{
+    position: absolute;
+    top: -4%;
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#page4 #pt1 .elem1{
+    display: flex;
+    align-items: center;
+    font-size: 1.1vw;
+    position: absolute;
+    top: 0%;
+    gap: 0.5vw;
+}
+#page4 #pt1 .elem1 .circle{
+    height: 1vw;
+    width: 1vw;
+    border-radius: 50%;
+    background-color: #000;
+}
+#page4 #pt1 .elem2{
+    position: absolute;
+    left: 30%;
+    width: 25%;
+    font-size: 2.3vw;
+    margin-left: 15vw;
+}
+#page4 #pt1 .elem3{
+    position: absolute;
+    right: 5%;
+    display: flex;
+}
+#page4 #pt1 .elem3 h1{
+    font-size: 2.6vw;
+    font-weight: 400;
+}
+#page4 #pt1 .elem3 h1:nth-child(1){
+    animation: blinks 1s infinite;
+}
+
+#page4 #pt2{
+    position: absolute;
+    padding-right: 1vw;
+    top: 5%;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+}
+#page4 .card{
+    border-radius: 1vw;
+    height: 100%;
+    width: 50%;
+    margin-right: 1vw;
+    overflow: hidden;
+    position: relative;
+}
+#page4 .card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 0.5s;
+}
+#page4 .card:hover img{
+    scale: 1.1;
+}
+
+#page4 #pt3{
+    position: absolute;
+    padding-right: 1vw;
+    top: 29%;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+}
+#page4 #pt3 .cardd{
+    position: absolute;
+    height: 45%;
+    width: 45%;
+    border-radius: 0.7vw;
+    overflow: hidden;
+}
+#page4 #pt3 #card22{
+    left: 50%;
+}
+#page4 #pt4{
+    position: absolute;
+    padding-right: 1vw;
+    top: 53%;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+}
+#page4 #pt5{
+    position: absolute;
+    padding-right: 1vw;
+    top: 77%;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+}
+
+@keyframes blinks {
+    0%, 49.9% {
+        opacity: 0;
+    }
+    50%, 100% {
+        opacity: 1;
+    }
+}
+
+#page5{
+    width: 100%;
+}
+#page5-top{
+    height: 30%;
+    width: 100%;
+    padding-top: 10vh;
+}
+#page5-top .text-section{
+    padding: 0 1vw;
+    width: 50%;
+    margin-left: 50%;
+}
+#page5-top #text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.3vw;
+    padding-bottom: 1vw;
+}
+#page5-top #text .blink-h2{
+    display: flex;
+    align-items: center;
+}
+#page5-top #text .blink-h2 .blink{
+    animation: blinks 1s infinite;
+}
+#page5-top #text h1{
+    font-weight: 400;
+}
+#page5-top .button-section{
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 1.5vw 2vw;
+    border-radius: 0.5vw;
+    background-color: #222;
+    cursor: pointer;
+    overflow: hidden;
+}
+#page5-top .button-section .buttons{
+    display: flex;
+    flex-direction: column;
+}
+#page5-top .button-section .buttons button{
+    padding: 0.5vw;
+    position: absolute;
+    top: 10%;
+    font-size: 1vw;
+    color: #ffff;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+}
+#page5-top .button-section .buttons button:nth-child(2){
+    top: 80%;
+    transition: all ease 0.5s;
+}
+
+#page5-top .button-section:hover{
+    background-color: #222;
+}
+#page5-top .button-section:hover button:nth-child(1){
+    top: -80%;
+}
+#page5-top .button-section:hover button:nth-child(2){
+    top: 10%;
+}
+
+#page5 #page5-btm{
+    height: 100vh;
+    width: 100%;
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    padding:  0 1.1vw;
+}
+#page5-btm #content{
+    position: relative;
+    height: 90%;
+    width: 100%;
+    border-radius: 1vw;
+    overflow: hidden;
+}
+#page5-btm #content img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#page5-btm #content #content-text{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#page5-btm #content #content-text #page5-btm-top{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#content #content-text #page5-btm-top .left .circle{
+    height: 2vw;
+    width: 2vw;
+    border-radius: 50%;
+    display: flex;
+    flex-shrink: 0;
+    margin-top: 1vw;
+    background-color: #000;
+}
+#content #content-text #page5-btm-top .left{
+    width: 40%;
+    font-size: 1.5vw;
+    display: flex;
+    gap: 1vw;
+    padding-top: 2vw;
+    padding-left: 2vw;
+}
+#content #content-text #page5-btm-top .left h1{
+    font-weight: 400;
+    line-height: 1;
+}
+#content #content-text #page5-btm-top .right .circle{
+   height: 10vw;
+   width: 10vw;
+   margin-right: 2vw;
+   margin-top: 2vw;
+   border-radius: 50%;
+   background-color: rgb(163, 129, 163);
+   position: relative;
+}
+#page5-btm-top .right .circle img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 2s;
+    transform: rotate(-20deg);
+}
+#page5-btm-top .right .circle:hover img{
+    transform: rotate(80deg);
+}
+#page5-btm-btm .text-section{
+    padding: 0 1vw;
+    width: 100%;
+    margin-top: 20%;
+}
+#page5-btm-btm #text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.3vw;
+    padding-bottom: 1vw;
+}
+#page5-btm-btm #text .blink-h2{
+    display: flex;
+    align-items: center;
+}
+#page5-btm-btm #text .blink-h2 h2{
+    font-weight: 400;
+    font-size: 2.5vw;
+    cursor: pointer;
+}
+#page5-btm-btm #text h1{
+    font-weight: 400;
+}
+#page5-btm-btm .button-section{
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 1.5vw 2vw;
+    border-radius: 0.5vw;
+    background-color: #222;
+    cursor: pointer;
+    overflow: hidden;
+}
+#page5-btm-btm .button-section .buttons{
+    display: flex;
+    flex-direction: column;
+}
+#page5-btm-btm .button-section .buttons button{
+    padding: 0.5vw;
+    position: absolute;
+    top: 10%;
+    font-size: 1vw;
+    color: #ffff;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+}
+#page5-btm-btm .button-section .buttons button:nth-child(2){
+    top: 80%;
+    transition: all ease 0.5s;
+}
+
+#page5-btm-btm .button-section:hover{
+    background-color: #222;
+}
+#page5-btm-btm .button-section:hover button:nth-child(1){
+    top: -80%;
+}
+#page5-btm-btm .button-section:hover button:nth-child(2){
+    top: 10%;
+}
+
+
+#footer{
+    height: 100vh;
+    width: 100%;
+    padding: 0 1vw;
+}
+#footer-top{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid silver;
+    justify-content: space-between;
+}
+#footer-top h1{
+    font-size: 20vw;
+    color: #e5e5e5;
+    font-weight: 900;
+}
+#footer-top h1:hover{
+    color: #cccc;
+}
+#footer-top #text{
+    width: 50%;
+}
+#footer-top #text h2{
+    width: 100%;
+    font-size: 2.2vw;
+    font-weight: 500;
+}
+#footer-top #text h2:nth-child(2){
+    margin-top: 3vw;
+    width: 50%;
+    border-bottom: 2px solid #000;
+}
+#footer-btm{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    padding-top: 3vw;
+    align-items: center;
+}
+#footer-btm .left{
+    height: 100%;
+    width: 50%;
+}
+#footer-btm .left p{
+    font-size: 1.2vw;
+    color: #bbbbbb;
+}
+#footer-btm .left input{
+    margin-top: 2.5vw;
+    margin-bottom: 2vw;
+    padding: 1vw 2vw;
+    border: 0;
+    background-color: #e6e6e6;
+    border-radius: 0.5vw;
+}
+#footer-btm .left h6{
+    width: 35%;
+    font-size: 1.2vw;
+    font-weight: 400;
+}
+#footer-btm .left h6 span{
+    border-bottom: 1px solid #000;
+}
+#footer-btm .left h5{
+    font-size: 1.2vw;
+    font-weight: 400;
+    color: #b6b6b6;
+    margin-top: 11vw;
+}
+#footer-btm .right{
+    height: 100%;
+    width: 50%;
+}
+#footer-btm .right .elems{
+    display: flex;
+    gap: 10vw;
+}
+#footer-btm .right .elems .elem p{
+    font-size: 1.1vw;
+    color: #b6b6b6;
+    margin-bottom: 2vw;
+}
+#footer-btm .right .elems .elem h6{
+    font-size: 1.3vw;
+    font-weight: 400;
+    transition: all ease 0.5s;
+}
+#footer-btm .right .elems .elem h6:hover{
+    border-bottom: 1px solid #000;
+}
+#footer-btm .right h5{
+    font-size: 1.2vw;
+    font-weight: 400;
+    color: #b6b6b6;
+    margin-top: 7vw;
+}
